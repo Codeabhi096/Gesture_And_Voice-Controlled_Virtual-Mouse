@@ -57,20 +57,7 @@ It utilizes:
 
 ---
 
-## ✨ **Screenshots**
-<details>
-<summary>Click to View Examples 📸</summary>
 
-| Gesture       | Image |
-|---------------|-------|
-| Move Cursor   | ![](https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p5.png) |
-| Left Click    | ![](https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p4.png) |
-| Right Click   | ![](https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p6.png) |
-
-
-</details>
-
----
 
 ## 🛠️ **Tech Stack**
 - Python
