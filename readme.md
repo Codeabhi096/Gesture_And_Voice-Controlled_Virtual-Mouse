@@ -1,168 +1,142 @@
-# Gesture and Voice Controlled Virtual Mouse &nbsp;
 
-The most efficient and expressive way of human communication is through hand gestures and speech, which is universally accepted for communication. It is expressive enough for a dumb and deaf people to understand it. In this work, a real-world gesture system is proposed. Experimental setup of the system uses fixed position cost-effective web cam for high definition recording feature mounted on the top of the monitor of a computer or a fixed laptop camera. In addition to this, it uses a microphone to capture sound which is later processed to perform various mouse functions. Recognition and the interpretation of sign language or speech is one of the major issues for the communication with dumb and deaf people.
 
-Note: Use Python version: 3.8.5
+<h1 align="center">🖐️🎙️ Gesture and Voice Controlled Virtual Mouse 🎙️🖐️</h1>
 
-# Features 
+<p align="center">
+ <b>Human Computer Interaction | Hand Gestures | Voice Recognition</b>  
+</p>
 
-### Gesture Recognition:
-<details>
-<summary>Neutral Gesture</summary>
- <figure>
-  <img src="https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p3.png" alt="Palm" width="200" height="200"><br>
-  <figcaption>Neutral Gesture. Used to halt/stop execution of current gesture.</figcaption>
-</figure>
-</details>
- 
-
-<details>
-<summary>Move Cursor</summary>
-  <img src="https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p5.png" alt="Move Cursor" width="200" height="200"><br>
-  <figcaption>Cursor is assigned to the midpoint of index and middle fingertips. This gesture moves the cursor to the desired location. Speed of the cursor movement is proportional to the speed of hand.</figcaption>
-</details>
-
-<details>
-<summary>Left Click</summary>
-<img src="https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p4.png" alt="Left Click" width="200" height="200"><br>
- <figcaption>Gesture for single left click</figcaption>
-</details>
-
-<details>
-<summary>Right Click</summary>
-<img src="https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p6.png" alt="Right Click" width="200" height="200"><br>
- <figcaption>Gesture for single right click</figcaption>
-</details>
-
-<details>
-<summary>Double Click</summary>
-<img src="https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p8.png" alt="Double Click" width="200" height="200"><br>
- <figcaption>Gesture for double click</figcaption>
-</details>
-
-<details>
-<summary>Scrolling</summary>
-<img src="https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p1.png" alt="Scrolling" width="200" height="200"><br>
- <figcaption>Dynamic Gestures for horizontal and vertical scroll. The speed of scroll is proportional to the distance moved by pinch gesture from start point. Vertical and Horizontal scrolls are controlled by vertical and horizontal pinch movements respectively.</figcaption>
-</details>
-
-<details>
-<summary>Drag and Drop</summary>
-<img src="https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p7.png" alt="Drag and Drop" width="200" height="200">
-<img src="https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p3.png" alt="Drag and Drop" width="200" height="200"><br>
- <figcaption>Gesture for drag and drop functionality. Can be used to move/tranfer files from one directory to other.</figcaption>
-</details>
-
-<details>
-<summary>Multiple Item Selection</summary>
-<img src="https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p3.png" alt="Drag and Drop" width="200" height="200">
-<img src="https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p7.png" alt="Drag and Drop" width="200" height="200">
- <img src="https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p3.png" alt="Drag and Drop" width="200" height="200"><br>
- <figcaption>Gesture to select multiple items</figcaption>
-</details>
-
-<details>
-<summary>Volume Control</summary>
-<img src="https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p9.png" alt="Volume Control" width="200" height="200"><br>
- <figcaption>Dynamic Gestures for Volume control. The rate of increase/decrease of volume is proportional to the distance moved by pinch gesture from start point. </figcaption>
-</details>
-
-<details>
-<summary>Brightness Control</summary>
-<img src="https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p9.png" alt= "Brightness Control" width="200" height="200"><br>
- <figcaption>Dynamic Gestures for Brightness control. The rate of increase/decrease of brightness is proportional to the distance moved by pinch gesture from start point. </figcaption>
-</details>
-
-### Voice Assistant ( ***Jerry*** ):
-<details>
-<summary>Launch / Stop  Gesture Recognition</summary>
-<img src="https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p10.jpeg" alt="launch stop gesture recognition" width="250" height="350">
-</details>
-
-<details>
-<summary>Google Search</summary>
-<img src="https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p11.jpeg" alt="proton search github" width="500" height="auto">
-</details>
-
-<details>
-<summary>Current Date and Time</summary>
- <img src="https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p12.jpeg" alt="proton find location" width="250" height="350">
-</details>
-
-<details>
-<summary>Copy and Paste</summary>
-<img src="https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p13.jpeg" alt="proton list files" width="500" height="auto"><br>
- <img src="https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p14.jpeg" alt="proton open" width="500" height="auto">
-</details>
-
-<details>
-<summary>Find a Location on Google Maps</summary>
-  <img src="https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p15.jpeg" alt="proton go back" width="500" height="auto"><br>
-</details>
-
-<details>
-<summary>File Navigation</summary>
- <img src="https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p16.jpeg" alt="proton date / time" width="250" height="350">
- <img src="https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p17.jpeg" alt="proton copy"  width="250" height="350">
- <img src="https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p18.jpeg" alt="proton paste"  width="250" height="350"><br>
-</details>
-
-<details>
-<summary>Sleep / Wake up Jerry</summary>
-  <img src="https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p19.jpeg" alt="proton sleep / wake up"  width="250" height="350">
-</details>
-
-<details>
-<summary>Exit</summary>
-   <img src="https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p20.jpeg" alt="proton exit" width="250" height="350">
-</details>
-
-# Getting Started
-
-  ### Pre-requisites
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.8.5-blue?style=for-the-badge&logo=python">
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge&logo=github">
   
-  Python: (3.6 - 3.8.5)<br>
+</p>
 
-  
-  ### Procedure
-  ```bash
-  git clone https://github.com/Codeabhi096/Gesture_And_Voice-Controlled_Virtual-Mouse
-  ```
-  
-  
-  Step 1: 
-  ```bash
-  conda create --name gest python=3.8.5
-  ```
-  
-  Step 2:
-  ```bash
-  conda activate gest
-  ```
-  
-  Step 3:
-  ```bash
-  pip install -r requirements.txt
-  ```
-  
-  Step 4:
-  ```bash 
-  conda install PyAudio
-  ```
-  ```bash 
-  conda install pywin32
-  ```
-  
-  Step 5:
-  ``` 
-  cd to the GitHub Repo till src folder
-  ```
-  
-  Step 6:
-  
-  For running Gesture Controller:
-  ```bash 
-  python Gesture_Controller.py
-  ```
-  
+---
+
+## 📖 **Project Overview**
+The most efficient and expressive way of human communication is through **hand gestures** and **speech**. This project combines both to control a computer's mouse and perform basic tasks. It helps make systems more accessible, especially for **dumb and deaf individuals**.
+
+It utilizes:
+- **Webcam** for gesture recognition  
+- **Microphone** for voice commands  
+
+➡️ **Note:** Use **Python version 3.8.5**
+
+---
+
+## 🚀 **Key Features**
+
+### ✋ Gesture Recognition:
+| Action            | Description                                                  |
+|-------------------|--------------------------------------------------------------|
+| 🛑 Neutral        | Stops current gesture execution                               |
+| 🖱️ Move Cursor    | Moves cursor using finger tracking                            |
+| 👆 Left Click     | Single click action                                           |
+| 👉 Right Click    | Right click action                                            |
+| 👌 Double Click   | Double click action                                           |
+| ✋ Scrolling      | Horizontal/Vertical scrolling                                 |
+| ✊ Drag & Drop    | Drag and drop functionality                                   |
+| 📂 Multi-Select   | Select multiple files/folders                                 |
+| 🔊 Volume Control | Increase/Decrease volume using gestures                      |
+| 🔆 Brightness     | Adjust screen brightness dynamically                         |
+
+---
+
+### 🗣️ Voice Assistant (**Jerry**)
+| Command                  | Function                      |
+|----------------------------|--------------------------------|
+| 🎬 Start/Stop Gestures      | Start/Stop gesture detection     |
+| 🌐 Google Search            | Perform Google search            |
+| 🕒 Date & Time              | Show current date and time        |
+| 📄 Copy / Paste             | Perform copy-paste actions        |
+| 📍 Google Maps Location     | Find location                     |
+| 🗂️ File Navigation          | Navigate system files              |
+| 😴 Sleep / Wake             | Put Jerry to sleep or wake up      |
+| 🚪 Exit                     | Exit the application               |
+
+---
+
+## ✨ **Screenshots**
+<details>
+<summary>Click to View Examples 📸</summary>
+
+| Gesture       | Image |
+|---------------|-------|
+| Move Cursor   | ![](https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p5.png) |
+| Left Click    | ![](https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p4.png) |
+| Right Click   | ![](https://github.com/sonalisingh18/B.Tech-CS----2022/blob/main/02_Grp_GestureAndVoiceControlledVirtualMouse/code/Media_files/p6.png) |
+
+
+</details>
+
+---
+
+## 🛠️ **Tech Stack**
+- Python
+- OpenCV
+- MediaPipe
+- Speech Recognition
+- PyAudio
+- pyautogui
+- pyttsx3
+
+---
+
+## 🔧 **Getting Started**
+
+### 🔗 Clone the Repository:
+```bash
+git clone https://github.com/Codeabhi096/Gesture_And_Voice-Controlled_Virtual-Mouse
+````
+
+### ⚙️ Setup Environment:
+
+```bash
+conda create --name gest python=3.8.5
+conda activate gest
+pip install -r requirements.txt
+conda install PyAudio
+conda install pywin32
+```
+
+### ▶️ **Run the Project:**
+
+```bash
+# Navigate to source directory:
+cd src
+
+# To run Gesture Controller
+python Gesture_Controller.py
+```
+
+---
+
+
+---
+
+## 💡 **Future Improvements**
+
+✅ Improved Gesture Accuracy
+✅ More Voice Commands Integration
+✅ Cross-Platform Support
+
+---
+
+## 🤝 **Contributors**
+
+| Name     | Role                   |
+| -------- | ---------------------- |
+| Abhishek | Developer & Maintainer |
+
+---
+
+
+## ✨ **If you liked it, don't forget to ⭐ the repository!**
+
+
+---
+
+
+
 
