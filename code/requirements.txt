@@ -8,4 +8,4 @@ mediapipe==0.8.6.2
 comtypes==1.1.11
 pycaw==20181226
 screen-brightness-control==0.9.0
-eel==0.14.0
+
