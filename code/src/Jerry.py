@@ -1,4 +1,12 @@
-
+import pyttsx3
+import speech_recognition as sr
+from datetime import date
+import time
+import webbrowser
+import datetime
+from pynput.keyboard import Key, Controller
+import pyautogui
+import sys
 import os
 from os import listdir
 from os.path import isfile, join
