@@ -235,5 +235,19 @@ while True:
     else:
         #take input from Voice
         voice_data = record_audio()
+#process voice_data
+    if 'jerry' in voice_data:
+        try:
+            #Handle sys.exit()
+            respond(voice_data)
+        except SystemExit:
+            reply("Exit Successfull")
+            break
+        except:
+            #some other exception got raised
+            print("EXCEPTION raised while closing.") 
+            break
+        
+
 
     
